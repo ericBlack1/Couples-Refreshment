@@ -1,5 +1,5 @@
 import React from "react";
-import Img2 from "../../assets/logo1.jpeg";
+import Img2 from "../../assets/logo2.png";
 const ServicesData = [
   {
     id: 1,
