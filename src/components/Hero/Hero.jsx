@@ -15,12 +15,12 @@ const Hero = () => {
         </h1>
 
         {/* Slogan */}
-        <p data-aos="zoom-out" data-aos-delay="300" className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-12 font-cursive">
+        <p data-aos="zoom-out" data-aos-delay="400" className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-12 font-cursive">
           Reignite Love, Reconnect, and Create Lasting Memories.
         </p>
 
         {/* Description */}
-        <p data-aos="fade-up" data-aos-once="true" className="text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto mt-8 font-corben"
+        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="200" className="text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto mt-8 font-corben"
         style={{textShadow: "0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6)"}}
         >
           "An intimate experience designed for couples to
