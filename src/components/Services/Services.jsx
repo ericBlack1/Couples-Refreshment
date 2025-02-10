@@ -58,7 +58,7 @@ const Services = () => {
         <div className="container">
           {/* Heading section  */}
           <div className="text-center mb-20">
-            <h1 className="text-5xl font-bold font-cursive text-gray-900">
+            <h1 className="text-4xl font-bold font-cursive text-gray-900">
               Best Experiences For You
             </h1>
           </div>

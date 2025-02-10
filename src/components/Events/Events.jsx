@@ -20,7 +20,7 @@ const Events = () => {
         <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0 ">
           <div className="container">
           <div className="text-center py-10">
-            <h1 className="text-6xl font-bold font-cursive text-red-700">
+            <h1 className="text-5xl font-bold font-cursive text-red-700">
               Upcoming Events
             </h1>
           </div>
