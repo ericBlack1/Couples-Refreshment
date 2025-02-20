@@ -21,7 +21,7 @@ const Menu = [
   {
     id: 4,
     name: "About",
-    link: "/#about",
+    link: "/about-us",
   },
 ];
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
             {/* Logo section */}
             <div data-aos="fade-down" data-aos-once="true">
               <a
-                href="#"
+                href="/"
                 className="text-red-600 font-bold text-2xl sm:text-3xl flex justify-center items-center gap-2 tracking-wider font-cursive"
               >
                 <img src={Logo} alt="Logo" className="w-14" />
