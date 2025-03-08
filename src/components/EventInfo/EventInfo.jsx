@@ -117,11 +117,6 @@ const EventInfo = () => {
           <button className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 hover:scale-105 duration-200">Submit</button>
         </form>
         
-        <h2 className="text-2xl font-semibold mt-8">Frequently Asked Questions</h2>
-        <div className="mt-4">
-          <p><strong>Where is the event taking place?</strong> The event is held at our exclusive venue located in the heart of the city.</p>
-          <p><strong>How much does it cost?</strong> Prices vary depending on the selected package and add-ons.</p>
-        </div>
       </div>
     </>
   );
