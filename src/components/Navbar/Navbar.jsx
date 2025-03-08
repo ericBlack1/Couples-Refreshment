@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/website/logo.png";
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Menu = [
   {
@@ -60,10 +61,12 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-red-700 hover:scale-105 duration-200 text-white px-4 py-2 rounded-full flex items-center gap-3">
-                Book
-                <FaHeart className="text-xl text-white drop-shadow-sm cursor-pointer" />
-              </button>
+              <Link to='/event-info'>
+                <button className="bg-red-700 hover:scale-105 duration-200 text-white px-4 py-2 rounded-full flex items-center gap-3">
+                  Book
+                  <FaHeart className="text-xl text-white drop-shadow-sm cursor-pointer" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

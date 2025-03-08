@@ -11,25 +11,18 @@ const FooterLinks = [
     link: "/about-us",
   },
   {
-    title: "Contact",
-    link: "/contact-us",
-  },
-  {
     title: "Events",
     link: "/event-info",
   },
+  {
+    title: "FAQs",
+    link: "/faqs",
+  },
 ];
 
-const bgImage = {
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  minHeight: "400px",
-  width: "100%",
-};
 const Footer = () => {
   return (
-    <div style={bgImage} className=" text-white">
+    <div className="text-white">
       <div className="bg-black min-h-[400px]">
         <div className="container grid md:grid-cols-3 pb-20 pt-5">
           <div className="py-8 px-4">

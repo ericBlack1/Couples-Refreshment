@@ -77,11 +77,11 @@ const Events = () => {
                       Promises to be an event you will never forget.  
                       And we can't wait to have you register below!👇
                     </p>
-                    <div className="mt-4">
+                    <Link to={"/event-info"} className="mt-4">
                       <button className="bg-red-700 hover:bg-red-800 transition-all duration-300 transform hover:scale-105 text-white px-8 py-3 rounded- flex items-center justify-center gap-2 shadow-md">
                         <span className="text-center font-semibold">Save your Spot 😉</span>
                       </button>
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <Link to="/event-info">

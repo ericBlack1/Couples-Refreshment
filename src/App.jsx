@@ -10,7 +10,6 @@ import EventInfo from "./components/EventInfo/EventInfo";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
-import Contact from './components/Contact/Contact';
 
 const App = () => {
   useEffect(() => {
@@ -33,7 +32,6 @@ const App = () => {
           </>} />
           <Route path="/event-info" element={<EventInfo />} />
           <Route path='/about-us' element={<About />} />
-          <Route path="/contact-us" element={<Contact />} />
         </Routes>
         <Testimonials />
         <Footer />

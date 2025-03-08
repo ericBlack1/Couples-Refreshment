@@ -72,9 +72,9 @@ const Services = () => {
             {ServicesData.map((service) => (
               <div
                 key={service.id}
-                className="mb-20 rounded-2xl bg-white hover:bg-red-700 hover:text-white relative shadow-xl duration-high group max-w-[300px]"
+                className="mb-20 rounded-2xl bg-white hover:bg-red-700 hover:text-white relative shadow-xl duration-high group max-w-[325px]"
               >
-                <div className="h-[122px]">
+                <div className="h-[135px]">
                   <img
                     src={service.img}
                     alt={service.name}
