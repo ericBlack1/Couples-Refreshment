@@ -76,13 +76,13 @@ const Events = () => {
                     </Link>
                   </div>
                 </div>
-                <Link to="/event-info">
+                <a href="/event-info">
                   <button className="bg-red-700 hover:bg-red-800 transition-all duration-300 transform hover:scale-105 text-white px-12 mx-auto py-3 rounded-full flex items-center justify-center gap-2 shadow-md">
                     <span className="text-center font-semibold">
                       Get more info
                     </span>
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
