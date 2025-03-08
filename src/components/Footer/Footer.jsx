@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const FooterLinks = [
@@ -33,7 +32,7 @@ const Footer = () => {
               Couples Refreshment
             </a>
             <p className="  pt-4">
-                Reignite Love, Reconnect, and Create Lasting Memories.
+              Reignite Love, Reconnect, and Create Lasting Memories.
             </p>
           </div>
 
