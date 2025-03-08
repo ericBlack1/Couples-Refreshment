@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Emilys+Candy&family=Great+Vibes&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Emilys+Candy&family=Great+Vibes&family=Pacifico&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,4 +19,31 @@
 /* smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes scroll-stop {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-stop {
+  display: flex;
+  animation: scroll-stop 30s ease-in-out infinite;
 }

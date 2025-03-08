@@ -1,6 +1,12 @@
 import { useState } from "react";
 import BackgroundImage from "../../assets/wall1.jpg";
-
+import Image1 from "../../assets/hotel1.jpg";
+import Image2 from "../../assets/hotel2.jpg";
+import Image3 from "../../assets/restau2.jpeg";
+import Image4 from "../../assets/restau3.jpg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const EventInfo = () => {
   const [, setSelectedPackage] = useState(null);
   const [addOns, setAddOns] = useState([]);
@@ -45,46 +51,52 @@ const EventInfo = () => {
     "Wine or Champagne Pairing",
   ];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 1000, // Smooth transition speed
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000, // Wait for 30s before switching images
+    cssEase: "linear",
+    pauseOnHover: false,
+  };
+
+  const images = [Image1, Image2, Image3, Image4, BackgroundImage];
+
   return (
     <>
-      <div
-        className="min-h-screen bg-cover bg-center flex justify-center items-center text-white"
-        style={{ backgroundImage: `url(${BackgroundImage})` }} // Set the background image
-      >
-        <div className="text-center px-4 sm:px-8 lg:px-16">
-          <h1
-            data-aos="fade-down"
-            data-aos-once="true"
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 font-serif"
-          >
-            Our First Smile
-          </h1>
+      {/* Scrolling Background */}
+      <div className="relative h-screen w-full overflow-hidden">
+        <Slider {...sliderSettings} className="absolute inset-0 w-full h-full">
+          {images.map((img, index) => (
+            <div key={index} className="w-full h-screen">
+              <div
+                className="w-full h-full bg-center bg-cover"
+                style={{ backgroundImage: `url(${img})` }}
+              ></div>
+            </div>
+          ))}
+        </Slider>
 
-          <p
-            data-aos="zoom-out"
-            data-aos-delay="400"
-            className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-12 font-cursive"
-          >
-            A Celebration of Love
-          </p>
-
-          <p
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-delay="200"
-            className="text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto mt-8 font-corben"
-            style={{
-              textShadow:
-                "0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6)",
-            }}
-          >
-            Rediscover your first moments, deepen your bond and create
-            unforgettable memories.
-          </p>
+        {/* Overlay & Text Content */}
+        <div className="absolute inset-0 bg-black/40 flex justify-center items-center text-white text-center">
+          <div className="px-4 sm:px-8 lg:px-16">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 font-serif">
+              Our First Smile
+            </h1>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-12 font-cursive">
+              A Celebration of Love
+            </p>
+          </div>
         </div>
       </div>
-      <div className="max-w-4xl mx-auto p-6 mt-2">
-        <h1 className="text-4xl font-bold font-cursive text-gray-900 text-center">
+
+      {/* Packages Section */}
+      <div className="max-w-4xl mx-auto p-6 ">
+        <h1 className="text-4xl font-bold font-cursive text-gray-900 text-center my-[70px]">
           Choose Your Love Experience
         </h1>
         <div className="space-y-6 mt-4">
@@ -110,6 +122,7 @@ const EventInfo = () => {
           ))}
         </div>
 
+        {/* Add-ons Section */}
         <h2 className="text-2xl font-semibold mt-12 text-center">
           Customize Your Evening - Request Extras
         </h2>
@@ -134,6 +147,7 @@ const EventInfo = () => {
           ))}
         </div>
 
+        {/* Reservation Form */}
         <h2 className="text-2xl font-semibold mt-12 text-center">
           Reserve Your Spot
         </h2>
@@ -152,6 +166,7 @@ const EventInfo = () => {
           </button>
         </form>
 
+        {/* FAQs Section */}
         <h2 className="text-2xl font-semibold mt-8">
           Frequently Asked Questions
         </h2>
